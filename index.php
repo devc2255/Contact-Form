@@ -18,6 +18,9 @@ if ($_POST) {
         // 2. Prepare Data for the API
         // We use your Railway Environment Variable for the API Key
         $apiKey = getenv('re_bDMnAEya_2wv1G5Cj3X4hyDQvBmpwSNC9'); 
+        $apiKey = getenv('RESEND_API_KEY');
+// TEMPORARY DEBUG LINE: 
+// echo "Key length is: " . strlen($apiKey);
         
         $data = [
             "from" => "onboarding@resend.dev", // Resend requires this for free accounts
