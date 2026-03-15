@@ -39,7 +39,7 @@ if ($_POST) {
 
         try {
             // Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;   // UNCOMMENT THIS LINE IF IT FAILS SO YOU CAN SEE THE ERROR
+            //$mail->SMTPDebug = SMTP::DEBUG_SERVER;   // UNCOMMENT THIS LINE IF IT FAILS SO YOU CAN SEE THE ERROR
             $mail->isSMTP();                                            
             $mail->Host       = gethostbyname('smtp.gmail.com');                     
             $mail->SMTPAuth   = true;                                   
