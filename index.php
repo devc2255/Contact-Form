@@ -114,7 +114,10 @@ if ($_POST) {
               <?php echo $error; ?>
               <?php echo $successMessage; ?>
               
-              <form method="post" id="contactForm" novalidate>
+              <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
+    <input type="hidden" name="access_key" value="32cc7fad-64ea-4ea5-a1cd-7846535402e6">
+    
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
                   
                   <div class="form-floating mb-3">
                       <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" 
