@@ -25,7 +25,7 @@ if ($_POST) {
         $data = [
             "from" => "onboarding@resend.dev", // Resend requires this for free accounts
             "to" => ["dev448230@gmail.com"],   // Your receiving email
-            "subject" => "Portfolio: " . $_POST['Subject'],
+            "subject" =>  $_POST['Subject'],
             "html" => "<strong>From:</strong> " . htmlspecialchars($_POST['email']) . "<br><p>" . nl2br(htmlspecialchars($_POST['textarea'])) . "</p>"
         ];
 
