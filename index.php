@@ -41,7 +41,7 @@ if ($_POST) {
             // Server settings
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;   // UNCOMMENT THIS LINE IF IT FAILS SO YOU CAN SEE THE ERROR
             $mail->isSMTP();                                            
-            $mail->Host       = 'smtp.gmail.com';                     
+            $mail->Host       = gethostbyname('smtp.gmail.com');                     
             $mail->SMTPAuth   = true;                                   
             $mail->Username   = 'dev448230@gmail.com';                 // Your Gmail address
             $mail->Password   = getenv('SMTP_PASSWORD');    // Paste the 16-letter App Password here (no spaces)
