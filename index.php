@@ -68,7 +68,7 @@ if ($_POST) {
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card shadow-lg w-100" style="max-width: 500px;">
             <div class="card-body p-5">
-                <h2 class="text-center mb-4">Contact Me (PHP)</h2>
+                <h2 class="text-center mb-4">Contact Form</h2>
                 <?php echo $error; echo $successMessage; ?>
                 <form method="post">
                     <div class="form-floating mb-3">
@@ -83,7 +83,7 @@ if ($_POST) {
                         <textarea class="form-control" name="textarea" id="textarea" style="height: 150px" placeholder="message"></textarea>
                         <label for="textarea">Message</label>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100 py-3">Send via PHP Backend</button>
+                    <button type="submit" class="btn btn-primary w-100 py-3">Submit Form</button>
                 </form>
             </div>
         </div>
