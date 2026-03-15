@@ -40,7 +40,7 @@ if ($_POST) {
             $mail->Host       = 'smtp.gmail.com';                     
             $mail->SMTPAuth   = true;                                   
             $mail->Username   = 'dev448230@gmail.com';                 // Your Gmail address
-            $mail->Password   = 'YOUR_PASSWORD_HERE';    // Paste the 16-letter App Password here (no spaces)
+            $mail->Password   = getenv('SMTP_PASSWORD');    // Paste the 16-letter App Password here (no spaces)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        // InfinityFree requires STARTTLS
             $mail->Port       = 587;                                   // InfinityFree blocks port 25, you MUST use 587
 
