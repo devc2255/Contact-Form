@@ -17,7 +17,7 @@ if ($_POST) {
     if ($error == "") {
         // 2. Prepare Data for the API
         // We use your Railway Environment Variable for the API Key
-        $apiKey = getenv('re_bDMnAEya_2wv1G5Cj3X4hyDQvBmpwSNC9'); 
+        $apiKey = getenv('re_c9uCpC2y_9GYxB2XdAiDnxM9518cQxKBK'); 
         $apiKey = getenv('RESEND_API_KEY');
 // TEMPORARY DEBUG LINE: 
 // echo "Key length is: " . strlen($apiKey);
